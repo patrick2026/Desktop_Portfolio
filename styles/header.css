@@ -1,0 +1,96 @@
+#container {
+  /* Definições de fundo */
+  background-image: url("../assets/images/Background_header.png");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column;
+  padding-top: 122px;
+  padding-bottom: 56px;
+
+  /* Alinhamento */
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  
+
+}
+
+.profile {
+  position: relative;
+  display: inline-block;
+  width: 112px; /* Tamanho da imagem */
+  height: 112px; /* Tamanho da imagem */
+  border-radius: 50%; /* Faz a imagem ficar redonda */
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+}
+
+.profile img {
+    width: 100%; /* A imagem ocupa todo o espaço do container */
+    height: 100%; /* A imagem ocupa todo o espaço do container */
+    object-fit: cover; /* Garante que a imagem preencha o espaço mantendo a proporção */
+}
+
+.profile-info {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 675px; /* Evita que o texto ultrapasse a largura desejada */
+}
+h1{
+    padding-top: 56px;
+    color: white;
+}
+h2{
+    color: white;
+}
+p {
+
+  color: white;
+  
+}
+.profile-info p {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  display: flex; 
+  gap: 15px; 
+}
+
+
+.social-links li {
+  display: flex;
+  align-items: center; 
+}
+
+
+.social-links a {
+  text-decoration: none;
+  color: white; 
+  font-size: 16px; 
+  display: flex;
+  align-items: center;
+  gap: 8px; /
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.seta {
+  width: 32px;
+  margin-top: 32px;
+  padding-top: 94px;
+  padding-bottom: 57px;
+}
