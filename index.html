@@ -7,43 +7,53 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!-- 🏠 Foto de Cabeçalho -->
-    <header id="container">
-      <div class="profile">
-        <img src="assets/images/Imagem do WhatsApp de 2025-01-19 à(s) 12.17.47_6ea62593.jpg" alt="Patrick Ventura" />
-      </div>
-      <div class="profile-info">
-        <h1>Hello World! Meu nome é Martina Santos</h1>
-        <h2>Desenvolvedora Fullstack</h2>
-        <p>
-          Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da <br>
-          minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
-        </p>
-      </div>
+<!-- 🏠 Cabeçalho Principal -->
+<header id="container">
+  <div class="global-header">
     
-      <!-- 🔗 Cabeçalho Links Sociais -->
-      <nav class="social-links">
-        <ul>
-          <li><a href="#" target="_blank"><img src="assets/icons/GitHub.principal.svg" alt="Ícone do GitHub" /> GitHub</a></li>
-          <li><a href="#"><img src="assets/icons/HTML.svg" alt="Ícone do HTML" /> HTML</a></li>
-          <li><a href="#"><img src="assets/icons/CSS.svg" alt="Ícone do CSS" /> CSS</a></li>
-          <li><a href="#"><img src="assets/icons/JavaScript (1).svg" alt="Ícone do JavaScript" /> JavaScript</a></li>
-          <li><a href="#"><img src="assets/icons/React.svg" alt="Ícone do React" /> React</a></li>
-          <li><a href="#"><img src="assets/icons/Node.js.svg" alt="Ícone do Node.js" /> Node.js</a></li>
-        </ul>
-      </nav>
-    
-      <div class="seta">
-        <img src="assets/icons/CaretDoubleDown.png" alt="Seta para baixo" />
-      </div>
-    </header>
+    <!-- 📷 Foto de Perfil -->
+    <figure class="whatsapp-photo">
+      <img src="assets/images/Avatar.svg" alt="Foto de perfil de Martina Santos" />
+    </figure>
 
-    <!-- 🛠 Seção Projetos -->
-    <main>
-      <section id="projetos" class="container">
+    <!-- ℹ️ Informações Pessoais -->
+    <section class="profile-info">
+      <h1>Hello World! Meu nome é Martina Santos</h1>
+      <h2>Desenvolvedora Fullstack</h2>
+      <p>
+        Transformo necessidades em aplicações reais, envolventes e funcionais. Desenvolvo sistemas através da <br>
+        minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
+      </p>
+    </section>
+
+    <!-- 🔗 Links Sociais -->
+    <nav class="social-links">
+      <ul>
+        <li><a href="#" target="_blank"><img src="assets/icons/GitHub.principal.svg" alt="Ícone do GitHub" /> GitHub</a></li>
+        <li><a href="#"><img src="assets/icons/HTML.svg" alt="Ícone do HTML" /> HTML</a></li>
+        <li><a href="#"><img src="assets/icons/CSS.svg" alt="Ícone do CSS" /> CSS</a></li>
+        <li><a href="#"><img src="assets/icons/JavaScript (1).svg" alt="Ícone do JavaScript" /> JavaScript</a></li>
+        <li><a href="#"><img src="assets/icons/React.svg" alt="Ícone do React" /> React</a></li>
+        <li><a href="#"><img src="assets/icons/Node.js.svg" alt="Ícone do Node.js" /> Node.js</a></li>
+      </ul>
+    </nav>
+
+    <!-- 🔽 Ícone de seta para baixo -->
+    <div class="seta">
+      <img src="assets/icons/CaretDoubleDown.png" alt="Seta para rolar para baixo" />
+    </div>
+
+  </div>
+</header>
+
+
+    <!----- 🛠 Seção Projetos main -------->
+    <main id="projetos">
+      <section class="grid-container">
+      <div class="title">
         <h2>Meu Trabalho</h2>
         <p>Veja os projetos em destaque</p>
-
+      </div>
         <div class="grid-projetos">
           <a href="#" target="_blank">
             <article>
@@ -122,8 +132,8 @@
           </a>
         </div>
       </section>
-
-      <section id="projetos" class="container">
+<!--------- 🛠 service"---------------->
+      <section  class="service">
         <h2>Meus serviços</h2>
         <p>Como posso ajudar o seu negócio</p>
         <div class="">
