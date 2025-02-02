@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+#body {
   max-width: 1526px;
   padding-inline: 80px;
   margin-inline: auto;

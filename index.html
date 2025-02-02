@@ -6,7 +6,7 @@
     <title>Portfólio - Martina Santos</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body>
+  <body id="body">
 <!-- 🏠 Cabeçalho Principal -->
 <header id="container">
   <div class="global-header">
@@ -108,7 +108,7 @@
       </section>
     </main>
 <!-------------------- 🛠 service"---------------------------->
-<section class="service">
+<section id="service">
   <h2>Meus serviços</h2>
   <p>Como posso ajudar o seu negócio</p>
 
@@ -141,56 +141,43 @@
     </main>
     <!---------------------- 🛠 footer ----------------------->
     <footer>
-      <section class="contato">
-        <div class="description-contact">
-        <p>Contato</p>
-      </div>
-
-      <div class="description-contact">
-        <h2>Gostou do meu trabalho? </h2>
-      </div>
-
-      <div class="description-contact">
-        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+      <section id="contato">
+        <div class="container">
+          <div class="description-contact">
+            <p class="paragraph-one">Contato</p>
+            <h2>Gostou do meu trabalho?</h2>
+            <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+          </div>
+    
+          <div class="card-global">
+            <article class="contact-card">
+              <img class="img-um" src="assets/icons/LinkedinLogo.png" alt="Linkedin Logo" />
+              <h3 class="card-h" >LinkedIn</h3>
+              <img class="img-seta" src="assets/icons/ArrowUpRight.png" alt="Seta" />
+            </article>
+    
+            <article class="contact-card">
+              <img class="img-um" src="assets/icons/InstagramLogo.png" alt="Instagram Logo" />
+              <h3 class="card-h" >Instagram</h3>
+              <img class="img-seta" src="assets/icons/ArrowUpRight.png" alt="Seta" />
+            </article>
+    
+            <article class="contact-card">
+              <img class="img-um" src="assets/icons/GithubLogo.png" alt="GitHub Logo" />
+              <h3 class="card-h" >GitHub</h3>
+              <img class="img-seta" src="assets/icons/ArrowUpRight.png" alt="Seta" />
+            </article>
+    
+            <article class="contact-card">
+              <img class="img-um" src="assets/icons/email.png" alt="Email" />
+              <h3 class="card-h">Email</h3>
+              <img class="img-seta" src="assets/icons/ArrowUpRight.png" alt="Seta" />
+            </article>
+          </div>
         </div>
-
-        <article class="contact-card">
-          <img src="assets/icons/LinkedinLogo.png" alt="LinkedinLogo" />
-          <img src="assets/icons/ArrowUpRight.png" alt="seta pra cima lado esquedo"/>
-          <div class="service-info">
-            <h3>Linkedin</h3>
-          </div>
-        </article>
-
-
-        
-          <article class="contact-card">
-            <img src="assets/icons/InstagramLogo.png" alt="InstagramLogo" />
-            <img src="assets/icons/ArrowUpRight.png" alt="seta pra cima lado esquedo"/>
-            <div class="service-info">
-              <h3>Instagram</h3>
-            </div>
-          </article>
-      
-          <article class="contact-card">
-            <img src="assets/icons/GithubLogo.png" alt="GithubLogo" />
-            <img src="assets/icons/ArrowUpRight.png" alt="seta pra cima lado esquedo"/>
-            <div class="service-info">
-              <h3>Github</h3>
-            </div>
-          </article>
-      
-          <article class="contact-card">
-            <img src="assets/icons/email.png" alt="email" />
-            <img src="assets/icons/ArrowUpRight.png" alt="seta pra cima lado esquedo"/>
-            <div class="service-info">
-              <h3>email</h3>
-            </div>
-          </article>
-          </div>
-           </section>
+      </section>
     </footer>
-
+    
            
 
   </body>

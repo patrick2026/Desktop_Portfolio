@@ -1,0 +1,99 @@
+/* Estilização do rodapé */
+#contato {
+  background-image: url("../assets/images/footer-images.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Container principal */
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Centralizando textos */
+.description-contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.paragraph-one {
+  padding-top: 0px;
+  padding-top: 8px;
+}
+
+/* Estilização dos cards */
+.card-global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  background: #292c34;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.card-h {
+  flex-grow: 1;
+  flex: none;
+  color: white;
+}
+
+.paragraph-one {
+  padding-top: 110px;
+  padding-bottom: 0px;
+}
+
+/* Estilização das imagens dentro dos cards */
+.img-um {
+  width: 40px;
+  height: 40px;
+}
+
+.img-seta {
+  width: 30px;
+  height: 30px;
+  filter: invert(29%) sepia(98%) saturate(748%) hue-rotate(194deg)
+    brightness(93%) contrast(98%);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .img-um,
+  .img-seta {
+    margin-bottom: 10px;
+  }
+}
