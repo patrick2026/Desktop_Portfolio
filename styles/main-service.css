@@ -1,0 +1,108 @@
+/* Garante que o layout ocupe toda a tela */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0e11;
+  font-family: Arial, sans-serif;
+}
+
+/* Seção principal */
+.service {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 56px 0;
+}
+
+/* Título e descrição */
+.service h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.service p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Grid dos serviços */
+.main-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* 🔹 Espaço entre os serviços */
+  padding: 0 5%;
+}
+
+/* Caixa do serviço */
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid gray; /* 🔹 Adiciona a borda cinza */
+  border-radius: 12px;
+  /* padding: 16px; */
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: left;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito hover nos cards */
+.service-card:hover {
+  transform: scale(1.05);
+  cursor: pointer; /* Muda o cursor para uma mão */
+}
+
+/* Estilização da imagem */
+.service-card img {
+  width: 64px; /* 🔹 Define um tamanho adequado para o ícone */
+  height: 64px;
+  padding-bottom: 20px;
+}
+
+/* Container do texto */
+.service-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título dentro do card */
+.service-info h3 {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+/* Parágrafo dentro do card */
+.service-info p {
+  color: #ccc;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* 🌍 Responsividade */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-card img {
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+
+  .service-info {
+    align-items: center;
+  }
+}
