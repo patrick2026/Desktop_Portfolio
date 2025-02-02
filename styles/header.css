@@ -66,7 +66,13 @@ p {
 
 .social-links li {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #292c34;
+  border-radius: 999px;
 }
 
 .social-links a {
