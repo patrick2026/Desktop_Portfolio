@@ -25,7 +25,7 @@
   --h2: 800 clamp(18px, 2vw, 24px) / 135% var(--font-family);
   --h3: 800 clamp(12px, 1.5vw, 14px) / 140% var(--font-family);
   --text-md: 600 clamp(18px, 2vw, 24px) / 120% var(--font-family);
-  --text-sublime: 400 clamp(16px, 1.8vw, 20px) / 120% var(--font-family);
+  --text-sublime: 400 clamp(20px, 1.8vw, 20px) / 120% var(--font-family);
   --text-sm: 400 clamp(14px, 1.5vw, 16px) / 120% var(--font-family);
   --text-md-pro: 600 clamp(14px, 1.6vw, 16px) / 140% var(--font-family);
   --text-sm-pro: 400 clamp(12px, 1.4vw, 14px) / 140% var(--font-family);
@@ -33,7 +33,7 @@
 
 /* Estrutura geral */
 #body {
-  max-width: 1526px;
+  max-width: 1566px;
   padding-inline: 5%;
   margin-inline: auto;
   width: 100%;

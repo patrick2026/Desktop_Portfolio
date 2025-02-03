@@ -6,7 +6,7 @@
 }
 
 .grid-container {
-  background-color: #292c34;
+  background-color: #16181d;
   width: 100%;
   padding-inline: 164px;
   max-width: 1400px;
@@ -16,8 +16,8 @@
 
 .main-card:hover {
   transform: scale(1.05);
-  border: 2px solid blue; /* Adiciona a borda azul */
-  cursor: pointer; /* Muda o cursor para uma mão */
+  border: 2px solid blue;
+  cursor: pointer;
 }
 
 .title {
@@ -26,13 +26,14 @@
 }
 
 h2 {
-  padding-top: 72px;
+  padding-top: 2px;
+  padding-bottom: 56px;
   font-size: 24px;
 }
 
 p {
-  padding-top: 2px;
-  padding-bottom: 56px;
+  padding-top: 72px;
+  padding-bottom: 8px;
   font-size: 16px;
 }
 

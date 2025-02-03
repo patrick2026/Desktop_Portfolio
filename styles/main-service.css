@@ -4,18 +4,34 @@
   background-color: #0d0e11;
   text-align: center;
   color: white;
-  padding: 56px 0;
+  padding-bottom: 120px;
 }
 
+.service-main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+}
 /* Título e descrição */
-.service h2 {
-  font-size: 28px;
-  margin-bottom: 8px;
+.title-h2 {
+  font: var(--h1);
+  color: aliceblue;
+  color: var(--basis-gray-600);
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  font-size: 3rem;
+  margin-bottom: 1.5px;
 }
-
-.service p {
+.description-title-p {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 60px;
   font-size: 16px;
-  margin-bottom: 40px;
 }
 
 /* Grid dos serviços */

@@ -40,28 +40,30 @@
   color: white;
   padding: 50px 20px;
 }
-
 /* Estilização do texto "Hello World!" */
 .intro {
   font: var(--text-sublime);
   color: var(--basis-gray-500);
-  padding-bottom: 10px;
 }
 
 /* Estilização do título */
 .profile-info h1 {
   font: var(--h1);
-  color: var(--basis-gray-500);
+  color: var(--basis-gray-600);
   text-transform: uppercase;
-  padding-bottom: 20px;
-  font-size: 2rem;
+  padding-bottom: 10px;
+  font-size: 3rem;
 }
 
 /* Ajuste do parágrafo para manter duas linhas */
 .description {
-  max-width: 680px;
+  font: var(--text-sm);
+  color: var(--basis-gray-500);
+  max-width: 900px;
   white-space: normal;
-  line-height: 1.5;
+  line-height: 1;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 /* Links sociais */

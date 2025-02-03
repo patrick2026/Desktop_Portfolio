@@ -16,20 +16,31 @@
   width: 90%;
   max-width: 600px;
 }
+.intro-p {
+  font: var(--text-sublime);
+  color: var(--basis-gray-500);
+}
+.profile-footer h2 {
+  font: var(--h1);
+  color: aliceblue;
+  color: var(--basis-gray-600);
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  font-size: 1rem;
+}
 
+/* Ajuste do parágrafo para manter duas linhas */
+.description-p {
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 80px;
+}
 /* Centralizando textos */
 .description-contact {
   color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0px;
-}
-
-.paragraph-one {
-  padding-top: 0px;
-  padding-top: 8px;
 }
 
 /* Estilização dos cards */
@@ -37,7 +48,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+  padding-top: 0;
+  padding-bottom: 80px;
 }
 
 .contact-card {
