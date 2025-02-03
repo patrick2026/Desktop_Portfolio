@@ -1,3 +1,4 @@
+/* Container principal */
 #container {
   background-image: url("../assets/images/header_Intro.svg");
   background-size: cover;
@@ -9,9 +10,11 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  padding-top: 100px;
+  padding-inline: 20px;
 }
 
-/* Container principal */
+/* Estrutura global do header */
 .global-header {
   display: flex;
   flex-direction: column;
@@ -19,38 +22,46 @@
   justify-content: center;
   text-align: center;
 }
+
+/* Foto do WhatsApp */
 .whatsapp-photo {
   width: 112px;
   height: 112px;
+  border-radius: 50%;
 }
-.whatsapp-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-top: 120px;
-}
+
+/* Centraliza e ajusta a seção */
 .profile-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 680px;
+  text-align: center;
   color: white;
+  padding: 50px 20px;
 }
 
-h1 {
-  padding-top: 168px;
-  padding-bottom: 8px;
+/* Estilização do texto "Hello World!" */
+.intro {
+  font: var(--text-sublime);
+  color: var(--basis-gray-500);
+  padding-bottom: 10px;
 }
 
-h2 {
-  padding-top: 8px;
+/* Estilização do título */
+.profile-info h1 {
+  font: var(--h1);
+  color: var(--basis-gray-500);
+  text-transform: uppercase;
   padding-bottom: 20px;
+  font-size: 2rem;
 }
 
-p {
-  padding-top: 20px;
-  padding-bottom: 80px;
+/* Ajuste do parágrafo para manter duas linhas */
+.description {
+  max-width: 680px;
+  white-space: normal;
+  line-height: 1.5;
 }
 
 /* Links sociais */
@@ -75,6 +86,12 @@ p {
   border-radius: 999px;
 }
 
+/* Efeito ao passar o mouse */
+.social-links li:hover {
+  background: #3a3f4a;
+}
+
+/* Links */
 .social-links a {
   text-decoration: none;
   color: white;
@@ -84,6 +101,7 @@ p {
   gap: 8px;
 }
 
+/* Ícones sociais */
 .social-links img {
   width: 24px;
   height: 24px;
@@ -95,7 +113,35 @@ p {
   padding-top: 94px;
   padding-bottom: 57px;
 }
-/* Responsividade */
+
+/* 🌟 Responsividade */
+@media (max-width: 768px) {
+  #container {
+    padding-top: 80px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.8rem;
+    padding-top: 50px;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding-bottom: 20px;
+    max-width: 90%;
+  }
+
+  .social-links ul {
+    gap: 10px;
+  }
+
+  .seta {
+    width: 28px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   body {
     padding-inline: 10px;
@@ -103,14 +149,10 @@ p {
 
   .profile-info h1 {
     font-size: 1.5rem;
-    padding-top: 80px;
+    padding-top: 40px;
   }
 
-  .profile-info h2 {
-    font-size: 1.2rem;
-  }
-
-  .profile-info p {
+  .description {
     font-size: 0.9rem;
     padding-bottom: 30px;
   }

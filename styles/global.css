@@ -1,16 +1,66 @@
+/* Reset geral */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Variáveis globais */
+:root {
+  --main-red: #e3646e;
+  --main-purple: #bb72e9;
+  --main-blue: #3996db;
+  --main-green: #82bc4f;
+  --main-yellow: #eabd5f;
+
+  --basis-gray-100: #0d0e11;
+  --basis-gray-200: #16181d;
+  --basis-gray-300: #292c34;
+  --basis-gray-400: #878ea1;
+  --basis-gray-500: #c0c4ce;
+  --basis-gray-600: #e2e4e9;
+
+  --font-family: "Inconsolata", serif, sans-serif;
+  --h1: 800 clamp(20px, 2vw, 24px) / 135% var(--font-family);
+  --h2: 800 clamp(18px, 2vw, 24px) / 135% var(--font-family);
+  --h3: 800 clamp(12px, 1.5vw, 14px) / 140% var(--font-family);
+  --text-md: 600 clamp(18px, 2vw, 24px) / 120% var(--font-family);
+  --text-sublime: 400 clamp(16px, 1.8vw, 20px) / 120% var(--font-family);
+  --text-sm: 400 clamp(14px, 1.5vw, 16px) / 120% var(--font-family);
+  --text-md-pro: 600 clamp(14px, 1.6vw, 16px) / 140% var(--font-family);
+  --text-sm-pro: 400 clamp(12px, 1.4vw, 14px) / 140% var(--font-family);
+}
+
+/* Estrutura geral */
 #body {
   max-width: 1526px;
-  padding-inline: 80px;
+  padding-inline: 5%;
   margin-inline: auto;
   width: 100%;
   height: 100%;
 }
 
+/* Imagens sempre responsivas */
 img {
   max-width: 100%;
+  height: auto;
+}
+
+/* 🌟 Responsividade */
+@media (max-width: 1024px) {
+  #body {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #body {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #body {
+    padding-inline: 10px;
+  }
 }
